@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delicious Bites</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff7f0;
+    }
+
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: #e74c3c;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 20px;
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .center-text {
+      text-align: center;
+      font-size: 1.4em;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .featured {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .featured img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 15px;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 5px;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .order-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .order-btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Delicious Bites</h1>
+  <p>Your daily dose of tasty food ideas!</p>
+</header>
+
+<nav>
+  <a id="home-link">Home</a>
+  <a id="menu-link">Fast Food Menu</a>
+  <a id="about-link">About Us</a>
+</nav>
+
+<section id="home" class="active">
+  <h2 class="center-text">Welcome to Our Food World</h2>
+  <p class="center-text">Craving something special?</p>
+  <h3 class="center-text">Featured Dishes</h3>
+  <div class="featured">
+    <img src="pizza.jpg" alt="Pizza" />
+    <img src="burger.jpg" alt="Burger" />
+  </div>
+</section>
+
+<section id="menu">
+  <h2 class="center-text">Our Fast Food Items</h2>
+  <div class="menu">
+    <div class="item">
+      <img src="burger.jpg" alt="Cheese Burger" />
+      <h3>Cheese Burger</h3>
+      <p class="price">$5.99</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="pizza.jpg" alt="Pepperoni Pizza" />
+      <h3>Pepperoni Pizza</h3>
+      <p class="price">$8.99</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="fries.jpg" alt="French Fries" />
+      <h3>French Fries</h3>
+      <p class="price">$2.49</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="nuggets.jpg" alt="Chicken Nuggets" />
+      <h3>Chicken Nuggets</h3>
+      <p class="price">$4.29</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="wrap.jpg" alt="Chicken Wrap" />
+      <h3>Chicken Wrap</h3>
+      <p class="price">$6.49</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="icecream.jpg" alt="Ice Cream" />
+      <h3>Ice Cream</h3>
+      <p class="price">$2.99</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <!-- New items -->
+    <div class="item">
+      <img src="hotdog.jpg" alt="Hot Dog" />
+      <h3>Hot Dog</h3>
+      <p class="price">$3.49</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="salad.jpg" alt="Fresh Salad" />
+      <h3>Fresh Salad</h3>
+      <p class="price">$4.99</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+    <div class="item">
+      <img src="soda.jpg" alt="Cold Drink" />
+      <h3>Cold Drink</h3>
+      <p class="price">$1.99</p>
+      <a href="#order" class="order-btn">Click here to order</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="center-text">About Us</h2>
+  <p class="center-text">
+    At <strong>Delicious Bites</strong>, we're passionate about serving the tastiest fast food made with quality ingredients and love. 
+    Our team is dedicated to bringing you your favorite comfort meals—whether you're on the go or relaxing at home.
+  </p>
+  <p class="center-text">
+    Founded in 2020, we’ve quickly grown into a local favorite thanks to our delicious menu, friendly service, and a commitment to freshness.
+    Join us for a bite—you’ll be coming back for more!
+  </p>
+</section>
+
+<script>
+  const homeLink = document.getElementById('home-link');
+  const menuLink = document.getElementById('menu-link');
+  const aboutLink = document.getElementById('about-link');
+  const homeSection = document.getElementById('home');
+  const menuSection = document.getElementById('menu');
+  const aboutSection = document.getElementById('about');
+
+  homeLink.addEventListener('click', () => {
+    homeSection.classList.add('active');
+    menuSection.classList.remove('active');
+    aboutSection.classList.remove('active');
+  });
+
+  menuLink.addEventListener('click', () => {
+    menuSection.classList.add('active');
+    homeSection.classList.remove('active');
+    aboutSection.classList.remove('active');
+  });
+
+  aboutLink.addEventListener('click', () => {
+    aboutSection.classList.add('active');
+    homeSection.classList.remove('active');
+    menuSection.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
